@@ -14,4 +14,5 @@ const setValue = value => {
     setStoredValue(value);
     // Save to local storage
     window.localStorage.setItem(key, JSON.stringify(value));
+    return [setValue]
   };
